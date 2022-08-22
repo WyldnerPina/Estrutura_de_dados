@@ -9,11 +9,20 @@ public class ExercicioRecursividade {
 		
 		// EXERCÍCIO FATORIAL
 		int fat;
-		System.out.println("Digite um numero");
 		fat = 6;
 		fat = rec.RecursividadeFatorial(fat);
-		System.out.println("O resultado eh: " + fat);
+		System.out.println("Fatorial: " + fat);
 		System.out.println("===========================================================");
+		
+		int c = 0;
+		int v[] = {0, -4, -3, 9, -5, 8, 1, 2, -7, -10};
+		int s[] = new int[1];
+		c = rec.vetorNegativo(c, v, s);
+		System.out.println("Negativos: " + s[0]);
+		System.out.println("===========================================================");
+		
+		String saco = "foda-se";
+		saco = rec.inverteCaracter(saco, saco.length() - 1);
+		System.out.println(saco);		
 	}
-
 }

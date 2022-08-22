@@ -21,7 +21,21 @@ public class ExercicioRecursividade02 {
 		r = rec.Exerc03SomatorioMenor(num);
 		System.out.println("O resultado da soma eh: " + r);
 		System.out.println("===========================================================");
-
+		
+		int n = 20495545, igual = 4; 
+		int soma[] = new int [1];
+		n = rec.Exerc04ContaNum(n, igual, soma);
+		System.out.println("O resultado da soma eh: " + soma[0]);
+		System.out.println("===========================================================");
+		
+		num = 7;
+		result = rec.Exerc05Fibonacci(num);
+		System.out.println("Fibonacci: " + result);
+		System.out.println("===========================================================");
+		
+		r = 3;
+		r = rec.Exerc06SomaDivFat(r);
+		System.out.println("Ultimo " + r);
+		System.out.println("===========================================================");
 	}
-
 }

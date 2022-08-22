@@ -66,4 +66,38 @@ public class RecursividadeController {
 			// giro 5 → 0, retorna = 0
 		}
 	}
+	
+	public int Exerc04ContaNum(int num, int igual, int[] soma) {
+		if(num < 10) {
+			return 10;
+		}		
+		num = num%10 + 0*Exerc04ContaNum(num/10, igual, soma);
+		if(num == igual ) {
+			soma[0] = soma[0] + 1;
+		}		
+		return num;
+	}
+	
+	public int Exerc05Fibonacci(int num) {
+		if (num == 0 || num == 1 ) {
+			return num;
+		}		     
+		    return Exerc05Fibonacci(num - 1) + Exerc05Fibonacci(num - 2);
+	}
+	
+	public double Exerc06SomaDivFat(double num) {
+		if (num <= 0) {
+			return 0;
+		} else {
+			num = Exerc03SomatorioMenor(num - 1) + (1 / Fatorial(num));
+			return num;			
+		}
+	}
+	
+	public double Fatorial(double num){
+		if (num <= 1) {
+			return 1;
+		} 			
+		return num * Fatorial(num - 1);		
+	}
 }
