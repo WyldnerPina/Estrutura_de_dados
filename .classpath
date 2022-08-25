@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Aula01_AulaRecursividade/src"/>
+	<classpathentry kind="src" path="Aula01_ExercicioRecursividade/src"/>
+	<classpathentry kind="src" path="Aula02_ExercicioRecursividade/src"/>
+	<classpathentry kind="src" path="RecursividadeMeu/src"/>
+	<classpathentry kind="output" path="Aula01_AulaRecursividade/bin"/>
+</classpath>
