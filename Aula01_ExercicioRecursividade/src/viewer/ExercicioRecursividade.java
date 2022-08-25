@@ -21,7 +21,7 @@ public class ExercicioRecursividade {
 		System.out.println("Negativos: " + s[0]);
 		System.out.println("===========================================================");
 		
-		String saco = "foda-se";
+		String saco = "saquitu";
 		saco = rec.inverteCaracter(saco, saco.length() - 1);
 		System.out.println(saco);		
 	}

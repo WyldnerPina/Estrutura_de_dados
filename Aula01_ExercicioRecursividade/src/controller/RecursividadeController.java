@@ -17,6 +17,12 @@ public class RecursividadeController {
 		}
 	}
 	
+// ==================================== EXERCÍCIO =====================================
+// ====================================================================================
+// bom, aqui eu usei o tamanho pra ir somando sempre q tivesse a condição e depois retornei 
+// a soma, mas não tá bem uma recursiva o q vai me levar ao yt, já q vivemos os exercícios em 
+// excesso e a falta de explicação. formado pelo yt.
+	
 	public int vetorNegativo(int c, int[] v, int[] s) {
 		if(c < v.length) {
 			if(v[c]<0) {
@@ -28,6 +34,9 @@ public class RecursividadeController {
 		return c;
 	}
 	
+	
+// ==================================== EXERCÍCIO =====================================
+// ====================================================================================
 	public String inverteCaracter(String saco, int tam) {
 		if(tam == 0) {
 			return saco.charAt(0) + "";

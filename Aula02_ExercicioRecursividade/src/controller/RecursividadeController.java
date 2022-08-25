@@ -67,26 +67,38 @@ public class RecursividadeController {
 		}
 	}
 	
+	
+// ================================= EXERCÍCIO 4 ======================================
+// ====================================================================================
 	public int Exerc04ContaNum(int num, int igual, int[] soma) {
-		if(num < 10) {
+		if(num < 10) {// só volta o último número
 			return 10;
 		}		
-		num = num%10 + 0*Exerc04ContaNum(num/10, igual, soma);
+		num = num%10 + 0*Exerc04ContaNum(num/10, igual, soma);// anulo o número da volta
+		// pego o resto e vejo se é igual ao num digitado e vou somando em um vetor
+		// q funciona como ponteiro.
 		if(num == igual ) {
 			soma[0] = soma[0] + 1;
 		}		
 		return num;
 	}
 	
+// ================================= EXERCÍCIO 5 ======================================
+// ====================================================================================	
 	public int Exerc05Fibonacci(int num) {
-		if (num == 0 || num == 1 ) {
+		if (num == 0 || num == 1 ) {// pra voltar o último número de cada sequência.
 			return num;
-		}		     
-		    return Exerc05Fibonacci(num - 1) + Exerc05Fibonacci(num - 2);
+		}
+		// com as duas sequências consigo passar todas os números e verificar qual é o q quero
+		return Exerc05Fibonacci(num - 1) + Exerc05Fibonacci(num - 2);
 	}
 	
+// ================================= EXERCÍCIO 6 ======================================
+// ====================================================================================
+	
 	public double Exerc06SomaDivFat(double num) {
-		if (num <= 0) {
+		if (num <= 0) {// é o mesmo princípio já usado acima.
+			// só q agora eu chamo outra recursiva. de fatorial q se encontra abaixo
 			return 0;
 		} else {
 			num = Exerc03SomatorioMenor(num - 1) + (1 / Fatorial(num));
