@@ -6,26 +6,36 @@ public class Aula03_AlgoDeOrdenacao {
 
 	public static void main(String[] args) {
 		AlgoController algo = new AlgoController();
-		int num[] = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+		
+		int vet[] = {89, 54, 18, 71, 93, 45, 19, 14, 99, 2, 27, 3, 58, 91, 75};
 		
 // ================================== BUBLE SORT ======================================
 // ====================================================================================			
-		num = algo.bubleSort(num);
-		System.out.println("O resultado eh: " + num);
-		System.out.println("===========================================================");
+		vet = algo.bubleSort(vet);
+		System.out.println("Bubble sort: ");
+		for(int cada : vet) {
+			System.out.print(cada + ", ");
+		}
+		System.out.println("\n===========================================================");
 
 // ================================== MERGE SORT ======================================
 // ====================================================================================			
-		num = algo.mergeSort(num);
-		System.out.println("O resultado eh: " + num);
-		System.out.println("===========================================================");
+		vet = algo.mergeSort(vet);
+		System.out.println("Merge sort: ");
+		for(int cada : vet) {
+			System.out.print(cada + ", ");
+		}
+		System.out.println("\n===========================================================");
 
 
 // ================================== QUICK SORT ======================================
-// ====================================================================================			
-		num = algo.quickSort(num);
-		System.out.println("O resultado eh: " + num);
-		System.out.println("===========================================================");
+// ====================================================================================	
+//		vet = algo.quickSort(vet);
+//		System.out.println("O resultado eh: ");
+//		for(int cada : vet) {
+//			System.out.print(cada + ", ");
+//		}
+//		System.out.println("\n===========================================================");
 	}
 
 }
