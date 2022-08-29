@@ -1,12 +1,11 @@
 package controller;
 
 import wyldner.BubbleSortClassic;
-import wyldner.MergeSortBasic;
+import wyldnerPina.MergeSortBasic;
 
 
-
-public class AlgoController {
-	public AlgoController() {
+public class AlgoritmoController {
+	public AlgoritmoController() {
 		super();
 	}
 
@@ -22,15 +21,16 @@ public class AlgoController {
 // ====================================================================================	
 	public int[] mergeSortBasic(int[] vet) {
 		MergeSortBasic ms = new MergeSortBasic();
-		int tam = vet.length;
-		ms.mergeSort(vet, 0, tam);
+		int tam = vet.length - 1;
+		ms.mergeSortBasic(vet, 0, tam);
 		return vet;
 	}
 
 // ================================== QUICK SORT ======================================
 // ====================================================================================	
-//	public int[] quickSort(int[] vet) {
+//		public int[] quickSort(int[] vet) {
 //
-//		return vet;
-//	}
+//			return vet;
+//		}	
+
 }
