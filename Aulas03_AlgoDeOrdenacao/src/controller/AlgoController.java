@@ -3,6 +3,8 @@ package controller;
 import wyldner.BubbleSortClassic;
 import wyldner.MergeSortBasic;
 
+
+
 public class AlgoController {
 	public AlgoController() {
 		super();
@@ -18,9 +20,9 @@ public class AlgoController {
 
 // ================================== MERGE SORT ======================================
 // ====================================================================================	
-	public int[] mergeSort(int[] vet) {
+	public int[] mergeSortBasic(int[] vet) {
 		MergeSortBasic ms = new MergeSortBasic();
-		int tam = vet.length - 1;
+		int tam = vet.length;
 		ms.mergeSort(vet, 0, tam);
 		return vet;
 	}
