@@ -1,8 +1,8 @@
 package controller;
 
+import wylPina.QuickSortBasic;
 import wyldner.BubbleSortClassic;
 import wyldnerPina.MergeSortBasic;
-
 
 public class AlgoritmoController {
 	public AlgoritmoController() {
@@ -28,9 +28,11 @@ public class AlgoritmoController {
 
 // ================================== QUICK SORT ======================================
 // ====================================================================================	
-//		public int[] quickSort(int[] vet) {
-//
-//			return vet;
-//		}	
+	public int[] quickSort(int[] vet) {
+		QuickSortBasic qs = new QuickSortBasic();
+		int tam = vet.length - 1;
+		qs.quickSort(vet, 0, tam);
+		return vet;
+	}
 
 }

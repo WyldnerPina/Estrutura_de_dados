@@ -30,12 +30,12 @@ public class Aula03_AlgoOrdenacao {
 
 // ================================== QUICK SORT ======================================
 // ====================================================================================	
-//		vet = algo.quickSort(vet);
-//		System.out.println("O resultado eh: ");
-//		for(int cada : vet) {
-//			System.out.print(cada + ", ");
-//		}
-//		System.out.println("\n===========================================================");
+		vet = algo.quickSort(vet);
+		System.out.println("Quick sort: ");
+		for(int cada : vet) {
+			System.out.print(cada + ", ");
+		}
+		System.out.println("\n===========================================================");
 	}
 
 }
