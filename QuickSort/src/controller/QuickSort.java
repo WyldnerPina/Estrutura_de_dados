@@ -34,9 +34,9 @@ public class QuickSort {
 				trocar(vet, ponteiroEsq, ponteiroDir);
 				ponteiroEsq++;
 				ponteiroDir--;
-			}
-			trocar(vet, inicio, ponteiroDir);			
+			}						
 		}
+		trocar(vet, inicio, ponteiroDir);
 		return ponteiroDir;
 	}
 	

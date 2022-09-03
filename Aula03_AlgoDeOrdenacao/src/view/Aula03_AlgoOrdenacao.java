@@ -30,9 +30,10 @@ public class Aula03_AlgoOrdenacao {
 
 // ================================== QUICK SORT ======================================
 // ====================================================================================	
-		vet = algo.quickSort(vet);
+		int vet3[] = {89, 54, 18, 71, 93, 45, 19, 14, 99, 2, 27, 3, 58, 91, 75};
+		vet3 = algo.quickSort(vet3);
 		System.out.println("Quick sort: ");
-		for(int cada : vet) {
+		for(int cada : vet3) {
 			System.out.print(cada + ", ");
 		}
 		System.out.println("\n===========================================================");
