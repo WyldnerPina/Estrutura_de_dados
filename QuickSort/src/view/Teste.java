@@ -5,7 +5,7 @@ import controller.QuickSort;
 public class Teste {
 
 	public static void main(String[] args) {
-		int[] vet = {89, 54, 18, 71, 93, 45, 19, 14, 99, 2, 27, 3, 58, 91, 75};
+		int[] vet = {69, 68, 32, 36, 91, 19, 28, 44, 88, 73, 37, 99, 1};
 		QuickSort qs = new QuickSort();
 		vet = qs.quickSort(vet, 0, vet.length - 1);
 		
