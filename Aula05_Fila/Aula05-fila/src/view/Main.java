@@ -12,6 +12,7 @@ public class Main {
 		fila.insert(3);
 		fila.insert(4);
 		fila.insert(5);
+		fila.insert(6);
 		
 		
 		fila.size();
@@ -28,6 +29,8 @@ public class Main {
 		
 		int tamano = fila.size();
 		System.out.println(tamano + " ==> Tamanho");
+		
+		System.out.println(fila.toString());
 
 	}
 

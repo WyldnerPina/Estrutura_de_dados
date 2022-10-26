@@ -18,7 +18,8 @@ public class Principal {
 			p.altura = (float)((Math.random() * 1.66)+1.35);
 			fila.insert(p);
 		}		
-		parq.brinquedo(fila);	
+		parq.brinquedo(fila);
+		System.out.println(fila.toString());
 	}
 
 }

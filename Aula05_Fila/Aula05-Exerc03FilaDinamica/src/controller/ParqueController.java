@@ -12,15 +12,15 @@ public class ParqueController {
 			Pessoa p = (Pessoa) fila.remove();
 			if (p.altura < 1.60) {
 				if(p.idade >= 16) {
-					System.err.println(p.nome + " não apta por Altura");
+					System.err.println(p.nome + " nï¿½o apta por Altura");
 				}else {
-					System.err.println(p.nome + " não apta por Altura e idade");
+					System.err.println(p.nome + " nï¿½o apta por Altura e idade");
 				}				
 			} else {
 				if (p.idade < 16) {
-					System.err.println(p.nome + " não apta por idade");
+					System.err.println(p.nome + " nï¿½o apta por idade");
 				}else {
-					System.out.println(p.nome + " está apta");
+					System.out.println(p.nome + " estï¿½ apta");
 				}					
 			}	
 		}
