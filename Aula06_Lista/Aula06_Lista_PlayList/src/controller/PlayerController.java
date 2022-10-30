@@ -1,20 +1,64 @@
 package controller;
 
-public class PlayerController {
+import javax.swing.JOptionPane;
 
+import model.Musica;
+import wyldnerPina_ListaObject.Lista;
+
+
+public class PlayerController {
 	public PlayerController() {
-//		•adicionaMusica(Lista lista,String musica):void, que receberá uma String no formato:
-//		Nome_da_musica;nome_artista;duracao (obrigatoriamente dessa forma), fazer o split e gravar em um objeto
-//		Musica e, se a lista estiver vazia, adicione na primeira posição. A partir do segundo elemento, todas as outras
-//		músicas devem entrar no final da lista;
-//		
-//		• removeMusica(Lista lista, int posição): void, permitindo que o usuário remova qualquer música da lista. Se a
-//		lista estiver vazia, uma exceção deve ser mostrada;
-//		
-//		• executaPlaylist(Lista lista): void, que exibirá, do primeiro ao último elemento, no formato [Música: nome da
-//		música – Artista: nome artista – Duração: duracao]. Se a lista estiver vazia, uma exceção deverá ser lançada.
-//		Bônus: Gerar um sleep para simular a música tocando. Por não ser uma classe tipo Thread,
-//		deve-se usar Thread.sleep(tempo); para conseguir o mesmo efeito.
+		super();
+	}
+	
+//================================================================================================
+	public void addMusic(Lista lista, String music) throws Exception {
+		String[] partes = music.split(";");
+		Musica m = new Musica();
+		m.nome = partes[0];
+		m.nomeArtista = partes[1];
+		m.duracao = Integer.parseInt(partes[2]);
+
+		if (lista.isEmpty()) {
+			lista.addFirst(m);
+		} else {
+			lista.addLast(m);
+		}
+
+		System.out.println(m);
 	}
 
+//================================================================================================
+	public void removeMusic(Lista lista, int posicao) throws Exception {
+		if(lista.isEmpty()) {
+			JOptionPane.showMessageDialog(null, "lista vazia"); // não precisava, mas deixei pra lembrar do q pensei
+			throw new Exception("A lista está vazia");// foi pedido exceção, mas eu preferia aparecer mensagem igual deixei			
+		}else {
+			if(posicao == lista.size()) {
+				
+			}else if (posicao == 1){
+				
+			}else {
+				lista.remove(posicao);
+			}
+		}		
+	}
+
+
+//================================================================================================
+	public void executaPlaylist(Lista lista) throws Exception {
+		if(lista.isEmpty()) {		
+			JOptionPane.showMessageDialog(null, "lista vazia");
+			throw new Exception("A lista está vazia");
+		}else {
+			int cont = 0;
+			while(cont < lista.size()) {			
+				Musica m = (Musica) lista.get(cont);
+				System.out.println(cont);
+				System.out.println("Tocando Musica: " + m.nome + "\nArtista: " + m.nomeArtista);			
+				Thread.sleep(m.duracao*1000);
+				cont ++;			
+			}
+		}		
+	}
 }

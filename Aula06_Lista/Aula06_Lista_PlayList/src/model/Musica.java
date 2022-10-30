@@ -1,7 +1,13 @@
 package model;
 
 public class Musica {
-	String nome;
-	String nomeArtista;
-	int duracao;
+	
+	public String nome;
+	public String nomeArtista;
+	public int duracao;
+	
+	@Override
+	public String toString() {
+		return "Musica [nome=" + nome + ", nomeArtista=" + nomeArtista + ", duracao=" + duracao + "]";
+	}
 }
