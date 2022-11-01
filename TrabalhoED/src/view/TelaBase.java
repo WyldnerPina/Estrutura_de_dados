@@ -27,7 +27,7 @@ public class TelaBase extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					TelaBase frame = new TelaBase();
+					TelaBase frame = new TelaBase();// CHAMADA PARA TELA
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -36,7 +36,9 @@ public class TelaBase extends JFrame {
 		});
 	}
 
-	
+//====================================================================================================================================
+//============================================================ TELA BASE =============================================================
+//====================================================================================================================================
 	public TelaBase() {
 		setBackground(new Color(214, 220, 228));
 		setIconImage(Toolkit.getDefaultToolkit().getImage("D:\\A FATEC\\GitHub\\Estrutura_de_dados\\TrabalhoED\\img\\IconeSOE.ico"));
@@ -50,12 +52,14 @@ public class TelaBase extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		//----------------------------------------------------------------------------------------------------------------------------
 		JLabel lblNewLabel = new JLabel("");
 		lblNewLabel.setBackground(new Color(132, 151, 176));
 		lblNewLabel.setIcon(new ImageIcon("D:\\A FATEC\\GitHub\\Estrutura_de_dados\\TrabalhoED\\img\\logoSOE.png"));
 		lblNewLabel.setBounds(-18, -11, 266, 115);
 		contentPane.add(lblNewLabel);
 		
+		//----------------------------------------------------------------------------------------------------------------------------
 		txtSistemaDeOrientao = new JTextField();
 		txtSistemaDeOrientao.setEditable(false);
 		txtSistemaDeOrientao.setHorizontalAlignment(SwingConstants.RIGHT);
@@ -95,7 +99,11 @@ public class TelaBase extends JFrame {
 		textField_1.setEditable(false);
 		textField_1.setColumns(10);
 		textField_1.setBackground(new Color(191, 143, 0));
-		textField_1.setBounds(0, 93, 1008, 5);
+		textField_1.setBounds(0, 92, 1008, 5);
 		contentPane.add(textField_1);
+		//----------------------------------------------------------------------------------------------------------------------------
 	}
+//====================================================================================================================================
+//====================================================================================================================================
+//====================================================================================================================================
 }
