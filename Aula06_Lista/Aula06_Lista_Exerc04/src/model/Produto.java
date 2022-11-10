@@ -1,10 +1,10 @@
 package model;
 
 public class Produto {
-	String nome;
-	double produto;
-
+	public String nome;
+	public double preco;
+    
 	public String toString() {
-		return "Produto [nome = " + nome + ", produto = " + produto + "]";
+		return "Produto [nome = " + nome + ", preço = " + preco + "]";
 	}
 }
